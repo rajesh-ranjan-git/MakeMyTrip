@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 4.5rem;
+    background-image: url("/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    height: 95vh;
+    /* background-color: red; */
+}
+
+nav {
+    height: 8.5rem;
+    padding-top: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav>div {
+    height: 3rem;
+}
+
+nav>div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 2.2rem;
+    margin: 0 5px;
+}
+
+.property, .acc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.property>div, .biz>div {
+    margin: 0.3rem;
+}
+
+.property-icon {
+    padding: 0.7rem;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+}
+
+.property i {
+    font-size: 1.3rem;
+    color: rgb(255, 174, 0);
+}
+
+.property-text p:nth-child(1) {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.property-text p:nth-child(2) {
+    color: rgb(128, 128, 128);
+    font-size: 0.7rem;
+}
+
+.biz {
+    padding: 0 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px dotted gray;
+    border-left: 2px dotted gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.biz-img, .trips-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.biz-img img, .trips-img img, .acc img {
+    width: 1.8rem;
+}
+
+.biz-img span {
+    color: white;
+    font-weight: 600;
+}
+
+.biz-text p:nth-child(1), .trips-text p:nth-child(1) {
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.biz-text p:nth-child(2) {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.trips {
+    padding: 0 0.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.trips-text p:nth-child(2) {
+    color: rgb(128, 128, 128);
+    font-size: 0.7rem;
+}
+
+.acc {
+    padding: 0 0.6rem;
+    background-image: linear-gradient(93deg, #53b2fe, #065af3);
+    border-radius: 5px;
+}
+
+.acc>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.acc>div>span {
+    margin-left: 0.5rem;
+}
+
+.acc span {
+    color: white;
+    font-size: 0.7rem;
+}
+
+.lang {
+    padding: 0 0.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lang img {
+    width: 1.2rem;
+}
+
+.lang span {
+    color: white;
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+}
+
+.main-content {
+    height: 58vh;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.floating-content {
+    width: 80%;
+    height: 17vh;;
+    background-color: white;
+    border-radius: 10px;
+    color: rgb(90, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    translate: 13% -35%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.floating-content div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid transparent;
+}
+
+.floating-content div:hover {
+    color: #065af3;
+    font-weight: 800;
+    border-bottom: 2px solid #065af3;
+}
+/* 
+.floating-content div:nth-child(1):hover {
+    content: url("/images/flight-active.png");
+} */
+
+.floating-content img {
+    margin: 0 1rem;
+    width: 4rem;
+}
+
+.floating-content p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.booking {
+    padding: 15vh 1.5rem;
+    font-size: 0.8rem;
+    color: rgb(90, 83, 83);
+}
+
+.booking-upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking a {
+    text-decoration: none;
+    color: rgb(90, 83, 83);
+}
+
+.booking-middle {
+    margin-top: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 10px;
+    display: flex;
+}
+
+.booking-middle h1 {
+    color: black;
+}
+
+.booking-middle>div:hover {
+    background-color: #eaf5ff;
+    cursor: pointer;
+}
+
+.from, .to, .departure, .return, .traveller-class {
+    height: 20vh;
+    padding: 0.8rem 1rem 1.5rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.from, .to {
+    width: 30%;
+}
+
+.traveller-class {
+    width: 28%;
+    border-right: none;
+}
+
+.departure, .return {
+    width: 18%;
+}
+
+.booking-middle i {
+    margin: 0 0.4rem;
+    font-size: 0.8rem;
+}
+
+.from:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.traveller-class:hover {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.booking-lower {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.special-fare p:nth-child(1) {
+    font-weight: 700;
+    color: black;
+}
+
+.special-fare p:nth-child(2) {
+    margin: 0.3rem;
+    padding: 0.2rem 0.1rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    background: linear-gradient(93deg, #53b2fe, #065af3);
+    border-radius: 5px;
+}
+
+.fare-options {
+    margin: 0 0.3rem;
+    padding: 0.5rem;
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fare-options p:nth-child(1) {
+    font-weight: bold;
+}
+
+.fare-options p:nth-child(2) {
+    font-size: 0.7rem;
+}
+
+.fare-options>div {
+    margin: 0.2rem;
+}
+
+.fare-options:hover {
+    background-color: #eaf5ff;
+    border-color: #256cf1;
+}
+
+.floating-search {
+    padding: 0.4rem;
+    width: 13rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    background: linear-gradient(93deg, #040405, #065af3);
+    border-radius: 40px;
+    position: absolute;
+    translate: 240% -160%;
+    cursor: pointer;
+}
+
+.explore {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: absolute;
+    translate: 305% -30%;
+}
+
+.explore i {
+    margin: 1rem;
+}
+
+.middle-container {
+    height: 100vh;
+    background-color: #f2f2f2f2;
+    position: relative;
+}
+
+.floating-nav {
+    width: 75%;
+    height: 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    translate: 15% -60%;
+}
+
+.where2go, .insurance, .intl-flights, .mice, .gift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+.gift {
+    border-right: none;
+}
+
+.where2go, .insurance, .intl-flights, .mice, .gift {
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: rgb(90, 83, 83);
+}
+
+.intl-flights p:nth-child(1) {
+    color: black;
+    font-weight: bold;
+}
+
+.where2go, .insurance, .intl-flights, .mice, .gift p:nth-child(2) {
+    font-size: 0.7rem;
+}
+
+.fl-nav-img1 {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/images/where2go.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fl-nav-img2 {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/images/photo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fl-nav-img3 {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/images/intl-flight.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.fl-nav-img4 {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/images/people.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fl-nav-img5 {
+    width: 2rem;
+    height: 2rem;
+    background-image: url("/images/gift.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.floating-nav p {
+    margin-left: 0.5rem;
+}
